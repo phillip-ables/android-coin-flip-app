@@ -6,8 +6,24 @@
     android:layout_height="match_parent"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
+    android:paddingStart="0dp"
     android:orientation="vertical"
     android:gravity="center"
     tools:context="com.example.techtron.coinflipapp.MainActivity">
 
+        <ImageView
+            android:id="@+id/iv_coin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/heads"/>
+    
+        <Button
+            android:id="@+id/btn_flip"
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravit="center_horizontal"
+            android:text="FLIP"/>
 </LinearLayout>
