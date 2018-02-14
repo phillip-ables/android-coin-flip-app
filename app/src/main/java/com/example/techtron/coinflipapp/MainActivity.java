@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 coinSide = r.nextInt(2);
+                    if(coinSide == 0){
+                        iv_coin.setImageResource(R.drawable.heads);
+                    }else if(coinSide == 1){
+                        iv_coin.setImageResource(R.drawable.tails);
+                    }
 
             }
         });
