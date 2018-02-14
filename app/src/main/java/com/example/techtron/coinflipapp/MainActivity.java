@@ -3,6 +3,7 @@ package com.example.techtron.coinflipapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -33,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
                     }else if(coinSide == 1){
                         iv_coin.setImageResource(R.drawable.tails);
                     }
-
+                RotateAnimation rotate = new RotateAnimation(0, 360,
+                                         RotateAnimation.RELATIVE_TO_SELF, 0.5f, RotateAnimation.RELATIVE_TO_SELF, 0.5f);
+                rotate.setDuration(3000);
+                iv_coin.startAnimation(rotate);
             }
         });
     }
